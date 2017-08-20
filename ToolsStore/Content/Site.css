@@ -22,3 +22,18 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.jumbotron {
+    background-image: url('Images/Jumbotron-the-best-tools-store.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    height:100%;
+    padding-bottom:250px;
+}
+
+.jumbotron> h1{
+    color:white;
+    text-shadow: 3px 3px 2px #171717;
+    font-size:6rem;
+    font-weight:300;
+}
