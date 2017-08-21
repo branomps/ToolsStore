@@ -27,6 +27,7 @@ textarea {
     background-image: url('Images/Jumbotron-the-best-tools-store.jpg');
     background-repeat:no-repeat;
     background-size:cover;
+    height:100%;
     padding-bottom:250px;
 }
 
