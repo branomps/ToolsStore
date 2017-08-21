@@ -207,6 +207,14 @@
     <Compile Include="Migrations\201708212003597_ChangeListToIListInCategoryAndBrand.Designer.cs">
       <DependentUpon>201708212003597_ChangeListToIListInCategoryAndBrand.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201708212009044_PopulateCategoryMigration.cs" />
+    <Compile Include="Migrations\201708212009044_PopulateCategoryMigration.Designer.cs">
+      <DependentUpon>201708212009044_PopulateCategoryMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708212053174_PopulateBrands.cs" />
+    <Compile Include="Migrations\201708212053174_PopulateBrands.Designer.cs">
+      <DependentUpon>201708212053174_PopulateBrands.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Brand.cs" />
@@ -312,6 +320,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201708212003597_ChangeListToIListInCategoryAndBrand.resx">
       <DependentUpon>201708212003597_ChangeListToIListInCategoryAndBrand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708212009044_PopulateCategoryMigration.resx">
+      <DependentUpon>201708212009044_PopulateCategoryMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708212053174_PopulateBrands.resx">
+      <DependentUpon>201708212053174_PopulateBrands.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
