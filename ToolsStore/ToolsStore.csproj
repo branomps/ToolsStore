@@ -195,6 +195,15 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201708211835542_InitialCreate.cs" />
+    <Compile Include="Migrations\201708211835542_InitialCreate.Designer.cs">
+      <DependentUpon>201708211835542_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708211855213_JustOneDatabase.cs" />
+    <Compile Include="Migrations\201708211855213_JustOneDatabase.Designer.cs">
+      <DependentUpon>201708211855213_JustOneDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Brand.cs" />
     <Compile Include="Models\Category.cs" />
@@ -289,6 +298,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201708211835542_InitialCreate.resx">
+      <DependentUpon>201708211835542_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708211855213_JustOneDatabase.resx">
+      <DependentUpon>201708211855213_JustOneDatabase.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
