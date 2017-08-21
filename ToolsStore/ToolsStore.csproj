@@ -189,6 +189,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\BrandsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\StoreManagerController.cs" />
@@ -218,6 +219,10 @@
     <Compile Include="Migrations\201708212056154_PopulateCategories.cs" />
     <Compile Include="Migrations\201708212056154_PopulateCategories.Designer.cs">
       <DependentUpon>201708212056154_PopulateCategories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708212212010_CreateBrandControler.cs" />
+    <Compile Include="Migrations\201708212212010_CreateBrandControler.Designer.cs">
+      <DependentUpon>201708212212010_CreateBrandControler.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -296,6 +301,11 @@
     <Content Include="Views\StoreManager\Details.cshtml" />
     <Content Include="Views\StoreManager\Edit.cshtml" />
     <Content Include="Views\StoreManager\Index.cshtml" />
+    <Content Include="Views\Brands\Create.cshtml" />
+    <Content Include="Views\Brands\Delete.cshtml" />
+    <Content Include="Views\Brands\Details.cshtml" />
+    <Content Include="Views\Brands\Edit.cshtml" />
+    <Content Include="Views\Brands\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -333,6 +343,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201708212056154_PopulateCategories.resx">
       <DependentUpon>201708212056154_PopulateCategories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708212212010_CreateBrandControler.resx">
+      <DependentUpon>201708212212010_CreateBrandControler.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
