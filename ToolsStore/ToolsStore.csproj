@@ -225,6 +225,10 @@
     <Compile Include="Migrations\201708212212010_CreateBrandControler.Designer.cs">
       <DependentUpon>201708212212010_CreateBrandControler.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201708231738189_AddDescriptionPropertyToProduct.cs" />
+    <Compile Include="Migrations\201708231738189_AddDescriptionPropertyToProduct.Designer.cs">
+      <DependentUpon>201708231738189_AddDescriptionPropertyToProduct.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Brand.cs" />
@@ -352,6 +356,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201708212212010_CreateBrandControler.resx">
       <DependentUpon>201708212212010_CreateBrandControler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708231738189_AddDescriptionPropertyToProduct.resx">
+      <DependentUpon>201708231738189_AddDescriptionPropertyToProduct.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

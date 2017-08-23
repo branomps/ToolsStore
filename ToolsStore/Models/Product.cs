@@ -13,6 +13,7 @@ namespace ToolsStore.Models
         public virtual string Title { get; set; }
         public virtual decimal Price { get; set; }
         public virtual string ProductImgUrl { get; set; }
+        public virtual string Description { get; set; }
         public virtual Brand Brand { get; set; }
         public virtual Category Category { get; set; }
 
