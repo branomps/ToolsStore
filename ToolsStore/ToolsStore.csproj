@@ -319,6 +319,15 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\Images\BlackAndDecker\" />
+    <Folder Include="Content\Images\Bosch\" />
+    <Folder Include="Content\Images\Delta\" />
+    <Folder Include="Content\Images\Dewalt\" />
+    <Folder Include="Content\Images\Hitachy\" />
+    <Folder Include="Content\Images\Makita\" />
+    <Folder Include="Content\Images\Milwaukee\" />
+    <Folder Include="Content\Images\Panasonic\" />
+    <Folder Include="Content\Images\Ryobi\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
