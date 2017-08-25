@@ -23,6 +23,7 @@ namespace ToolsStore.Models
         public DbSet<Brand> Brands { get; set; }
         public DbSet<Category> Categories { get; set; } 
         public DbSet<Cart> Carts { get; set; }
+        public DbSet<Order> Orders { get; set; }
     
     }
 }
