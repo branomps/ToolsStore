@@ -197,6 +197,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Logic\AddAminRole.cs" />
     <Compile Include="Migrations\201708211835542_InitialCreate.cs" />
     <Compile Include="Migrations\201708211835542_InitialCreate.Designer.cs">
       <DependentUpon>201708211835542_InitialCreate.cs</DependentUpon>
@@ -256,6 +257,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Controllers\Web.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

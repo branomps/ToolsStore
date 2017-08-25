@@ -10,6 +10,7 @@ using ToolsStore.Models;
 
 namespace ToolsStore.Controllers
 {
+    [Authorize(Roles ="admin")]
     public class StoreManagerController : Controller
     {
         private ToolsStoreDB db = new ToolsStoreDB();
