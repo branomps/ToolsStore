@@ -1,0 +1,13 @@
+﻿@model  IEnumerable<ToolsStore.Models.Category>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Browse Categories</h2>
+<ul>
+    @foreach (var Category in Model)
+    {
+        <li>@Html.ActionLink(Category.Name, "Browse", new {category = Category.Name })</li>
+    }
+</ul>
