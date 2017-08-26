@@ -243,6 +243,14 @@
     <Compile Include="Migrations\201708251323064_AddOrderClassToModels.Designer.cs">
       <DependentUpon>201708251323064_AddOrderClassToModels.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201708261648202_AddSomeDataAnnotationForProduct.cs" />
+    <Compile Include="Migrations\201708261648202_AddSomeDataAnnotationForProduct.Designer.cs">
+      <DependentUpon>201708261648202_AddSomeDataAnnotationForProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708261652447_AddDisplayNameDataAnnotationsForProduct.cs" />
+    <Compile Include="Migrations\201708261652447_AddDisplayNameDataAnnotationsForProduct.Designer.cs">
+      <DependentUpon>201708261652447_AddDisplayNameDataAnnotationsForProduct.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Brand.cs" />
@@ -402,6 +410,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201708251323064_AddOrderClassToModels.resx">
       <DependentUpon>201708251323064_AddOrderClassToModels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708261648202_AddSomeDataAnnotationForProduct.resx">
+      <DependentUpon>201708261648202_AddSomeDataAnnotationForProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708261652447_AddDisplayNameDataAnnotationsForProduct.resx">
+      <DependentUpon>201708261652447_AddDisplayNameDataAnnotationsForProduct.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
