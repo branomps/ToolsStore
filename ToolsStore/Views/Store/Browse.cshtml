@@ -1,0 +1,20 @@
+﻿@model ToolsStore.Models.Category
+
+@{
+    ViewBag.Title = "Browse Products";
+}
+
+<div>
+    <h2><em>@Model.Name</em> Categories</h2>
+    <ul id="album-list">
+        @foreach ( var product in Model.Products)
+        {
+            <li>
+                <a href="@Url.Action("Details", new { id = product.ProductId})">
+                    <img src="@product.ProductImgUrl" alt="@product.Title" />
+                    <span>@product.Title</span>
+                </a>
+            </li>
+        }
+    </ul>
+</div>
