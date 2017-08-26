@@ -20,7 +20,7 @@ namespace ToolsStore.Controllers
         public ActionResult Browse(string category)
         {
             // Retrieve Genre and its Associated Albums from database
-            var categoryModel = storeDB.Categories.Include("Product")
+            var categoryModel = storeDB.Categories.Include("Products")
                 .Single(c => c.Name == category);
 
             return View(categoryModel);
