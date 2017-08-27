@@ -10,9 +10,7 @@ namespace ToolsStore.Models
     public class Product
     {
         public virtual int ProductId { get; set; }
-        [Required]
         public virtual int BrandId { get; set; }
-        [Required]
         public virtual int CategoryId { get; set; }
         [Required]
         [StringLength(100)]
@@ -20,9 +18,9 @@ namespace ToolsStore.Models
         [DisplayName("Price")]
         [Required]
         public virtual decimal Price { get; set; }
+        [DisplayName("Image Path")]
         [Required]
         public virtual string ProductImgUrl { get; set; }
-        [Required]
         public virtual string Description { get; set; }
         [DisplayName("Brand")]
         public virtual Brand Brand { get; set; }

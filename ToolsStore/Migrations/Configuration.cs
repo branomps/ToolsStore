@@ -57,7 +57,7 @@ namespace ToolsStore.Migrations
                     Title = "Hitachi CJ18DSL/L4",
                     Price = 113.99M,
                     ProductImgUrl = "/Images/Hitachi/",
-                    Description = "Hitachi CJ18DSL/L4 jigsaw with its ergonomically designed handle and weight of only 2.4kg it is both easy and comfortable to use and light enough to reduce user fatigue, keeping you going longer on the job. "
+                    Description = "Hitachi CJ18DSL jigsaw with its ergonomically designed handle and weight of only 2.4kg it is both easy and comfortable to use and light enough to reduce user fatigue, keeping you going longer on the job. "
                 }
                 
 

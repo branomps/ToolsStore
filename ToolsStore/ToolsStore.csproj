@@ -251,6 +251,10 @@
     <Compile Include="Migrations\201708261652447_AddDisplayNameDataAnnotationsForProduct.Designer.cs">
       <DependentUpon>201708261652447_AddDisplayNameDataAnnotationsForProduct.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201708270911409_AddDisplayNameForProductImgUrlAndRemoveSomeRequiredAnnotations.cs" />
+    <Compile Include="Migrations\201708270911409_AddDisplayNameForProductImgUrlAndRemoveSomeRequiredAnnotations.Designer.cs">
+      <DependentUpon>201708270911409_AddDisplayNameForProductImgUrlAndRemoveSomeRequiredAnnotations.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Brand.cs" />
@@ -416,6 +420,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201708261652447_AddDisplayNameDataAnnotationsForProduct.resx">
       <DependentUpon>201708261652447_AddDisplayNameDataAnnotationsForProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708270911409_AddDisplayNameForProductImgUrlAndRemoveSomeRequiredAnnotations.resx">
+      <DependentUpon>201708270911409_AddDisplayNameForProductImgUrlAndRemoveSomeRequiredAnnotations.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
