@@ -193,6 +193,7 @@
     <Compile Include="Controllers\CategoriesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\ShoppinCartController.cs" />
     <Compile Include="Controllers\StoreController.cs" />
     <Compile Include="Controllers\StoreManagerController.cs" />
     <Compile Include="Global.asax.cs">
@@ -365,6 +366,7 @@
     <Folder Include="Content\Images\Milwaukee\" />
     <Folder Include="Content\Images\Panasonic\" />
     <Folder Include="Content\Images\Ryobi\" />
+    <Folder Include="Views\ShoppinCart\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
