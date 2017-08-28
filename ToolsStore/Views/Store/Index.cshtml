@@ -1,10 +1,11 @@
 ﻿@model  IEnumerable<ToolsStore.Models.Category>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Store";
 }
 
 <h2>Browse Categories</h2>
+<p>Select from @Model.Count() Category:</p>
 <ul>
     @foreach (var Category in Model)
     {

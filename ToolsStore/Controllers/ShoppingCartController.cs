@@ -8,7 +8,7 @@ using ToolsStore.ViewModels;
 
 namespace ToolsStore.Controllers
 {
-    public class ShoppinCartController : Controller
+    public class ShoppingCartController : Controller
     {
         ToolsStoreDB storeDB = new ToolsStoreDB();
         // GET: /ShoppingCart/
