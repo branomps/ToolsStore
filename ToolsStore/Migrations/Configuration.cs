@@ -125,7 +125,7 @@ namespace ToolsStore.Migrations
                      ProductId = 11,
                      BrandId = 6,
                      CategoryId = 2,
-                     Title = "BlackandDecker BDCDDBT120C 20V MAX * Lithium Cordless Drill / Driver",
+                     Title = "BlackandDecker BDCDDBT120C 20V MAX Lithium Cordless Drill / Driver",
                      Price = 276M,
                      ProductImgUrl = "/Content/Images/BlackAndDecker/BlackandDecker BDCDDBT120C 20V.jpg",
                      Description = "Bring your project ideas to life with this compact and powerful cordless drill and driver. Its lightweight design and built-in LED light allows you to work in tight or dark spaces. Manage the SMARTECH battery remotely via the BLACK+DECKER app and use it as a portable charger to charge your mobile devices for ultimate convenience."
@@ -276,9 +276,9 @@ namespace ToolsStore.Migrations
                     BrandId = 6,
                     CategoryId = 5,
                     Title = "PivotPlus 6V Rechargeable Screwdriver",
-                    Price = 102M,
-                    ProductImgUrl = "Get the best results for each job with a rechargeable drill/driver that easily switches from drilling to driving. A 3-position handle helps you access tight spaces, and a built-in light illuminates work areas.",
-                    Description = "/Content/Images/BlackAndDecker/PivotPlus6V Rechargeable Screwdriver.jpg"
+                    Price = 102M, 
+                    ProductImgUrl = "/Content/Images/BlackAndDecker/PivotPlus6V Rechargeable Screwdriver.jpg",
+                    Description = "Get the best results for each job with a rechargeable drill/driver that easily switches from drilling to driving. A 3-position handle helps you access tight spaces, and a built-in light illuminates work areas."
                 },
                 new Product
                 {
@@ -446,8 +446,8 @@ namespace ToolsStore.Migrations
                        BrandId = 2,
                        CategoryId = 8,
                        Title = "Makita GN900SEX1 Makita Cordless Gas Framing Nailer Kit - With 2X Bateries",
-                       Price =449M,
-                       ProductImgUrl = "",
+                       Price = 449M,
+                       ProductImgUrl = "/Content/Images/Makita/Makita GN900SEX1.jpg",
                        Description = "The GN900SE gas framing nailer is ideal for timber frame erection, floor boarding, roof battening, decking, flat roofing, chipboard, shuttering, cladding, joists and a host of other applications."
                    },
                     new Product
@@ -550,6 +550,7 @@ namespace ToolsStore.Migrations
                            ProductImgUrl = "/Content/Images/Milwaukee/Milwaukee HD28AG32X 28v.jpg",
                            Description = "Powerful 28V High Power Milwaukee® motor delivers corded tool performance producing a max 9000rpm no load speed, the 125mm diameter disc producing a 36mm max cutting depth."
                        }
+
                 );
             //  This method will be called after migrating to the latest version.
 

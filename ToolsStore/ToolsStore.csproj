@@ -256,6 +256,10 @@
     <Compile Include="Migrations\201708270911409_AddDisplayNameForProductImgUrlAndRemoveSomeRequiredAnnotations.Designer.cs">
       <DependentUpon>201708270911409_AddDisplayNameForProductImgUrlAndRemoveSomeRequiredAnnotations.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201708292154209_AddToDatabase.cs" />
+    <Compile Include="Migrations\201708292154209_AddToDatabase.Designer.cs">
+      <DependentUpon>201708292154209_AddToDatabase.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Brand.cs" />
@@ -318,6 +322,7 @@
     <Content Include="Content\Images\Makita\Makita DJV140RFE 14.4V.jpg" />
     <Content Include="Content\Images\Makita\Makita DKP180Z.jpg" />
     <Content Include="Content\Images\Makita\Makita DLS714Z Twin 18v.jpg" />
+    <Content Include="Content\Images\Makita\Makita GN900SEX1.jpg" />
     <Content Include="Content\Images\Milwaukee\Milwaukee 4933451377 18v.jpg" />
     <Content Include="Content\Images\Milwaukee\Milwaukee C18 RAD-0 18V.jpg" />
     <Content Include="Content\Images\Milwaukee\Milwaukee HD28AG32X 28v.jpg" />
@@ -469,6 +474,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201708270911409_AddDisplayNameForProductImgUrlAndRemoveSomeRequiredAnnotations.resx">
       <DependentUpon>201708270911409_AddDisplayNameForProductImgUrlAndRemoveSomeRequiredAnnotations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708292154209_AddToDatabase.resx">
+      <DependentUpon>201708292154209_AddToDatabase.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
