@@ -1,6 +1,6 @@
 ﻿@model  IEnumerable<ToolsStore.Models.Category>
 
-<ul id="categories">
+<ul class="navbar-side">
 @foreach (var category in Model)
 {
     <li>
@@ -8,7 +8,7 @@
                 "Browse",
                 "Store",
                 new { Category = category.Name }, null)
-</li>
+    </li>
 }
 </ul>
 
