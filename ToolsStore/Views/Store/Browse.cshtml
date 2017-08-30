@@ -5,14 +5,17 @@
 }
 
 <div>
-    <h2><em>@Model.Name</em> Categories</h2>
-    <ul id="album-list">
+    <h2><em>@Model.Name</em> Category</h2>
+    <ul class="product-ul">
         @foreach ( var product in Model.Products)
         {
-            <li>
-                <a href="@Url.Action("Details", new { id = product.ProductId})">
-                    <img src="@product.ProductImgUrl" alt="@product.Title" />
-                    <span>@product.Title</span>
+            <li class="product-li">
+                <a class="product-a" href="@Url.Action("Details", new { id = product.ProductId})">
+                    <img  class="product-img "src="@product.ProductImgUrl" alt="@product.Title" />
+                    <span class="product-title">@product.Title</span>
+                </a>
+                <a href="@Url.Action("Details", "Store", new { id = product.ProductId })" class="btn btn-primary" role="button">
+                    Details
                 </a>
             </li>
         }

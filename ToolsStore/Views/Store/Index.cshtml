@@ -1,14 +1,26 @@
-﻿@model  IEnumerable<ToolsStore.Models.Category>
+﻿@model IEnumerable<ToolsStore.Models.Product>
 
 @{
     ViewBag.Title = "Store";
 }
+<div class="row">
 
-<h2>Browse Categories</h2>
-<p>Select from @Model.Count() Category:</p>
-<ul>
-    @foreach (var Category in Model)
+    @foreach (var product in Model)
     {
-        <li>@Html.ActionLink(Category.Name, "Browse", new {category = Category.Name })</li>
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <a href="@Url.Action("Details", "Store", new { id = product.ProductId })">
+                    <img id="img-size" class="img-responsive" alt="@product.Title" src="@product.ProductImgUrl" />
+                </a>
+                <div class="caption">
+                    <h3>@product.Title</h3>
+                    <p>@product.Price</p>
+                    <a href="@Url.Action("Details", "Store", new { id = product.ProductId })" class="btn btn-primary" role="button">
+                        Details
+                    </a>
+                </div>
+            </div>
+        </div>
     }
-</ul>
+
+</div>
