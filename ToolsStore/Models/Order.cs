@@ -42,6 +42,7 @@ namespace ToolsStore.Models
         [RegularExpression(@"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}", ErrorMessage = "Email is is not valid.")]
         [DataType(DataType.EmailAddress)]
         public virtual string Email { get; set; }
+        [ScaffoldColumn(false)]
         public virtual decimal Total { get; set; }
         [ScaffoldColumn(false)]
         public virtual System.DateTime OrderDate { get; set; }
