@@ -261,6 +261,10 @@
     <Compile Include="Migrations\201708292154209_AddToDatabase.Designer.cs">
       <DependentUpon>201708292154209_AddToDatabase.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201708300922581_AddDataAnnotationstoOrder.cs" />
+    <Compile Include="Migrations\201708300922581_AddDataAnnotationstoOrder.Designer.cs">
+      <DependentUpon>201708300922581_AddDataAnnotationstoOrder.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Brand.cs" />
@@ -479,6 +483,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201708292154209_AddToDatabase.resx">
       <DependentUpon>201708292154209_AddToDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708300922581_AddDataAnnotationstoOrder.resx">
+      <DependentUpon>201708300922581_AddDataAnnotationstoOrder.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -11,6 +11,7 @@ namespace ToolsStore.Controllers
     public class CheckoutController : Controller
     {
         ToolsStoreDB storeDB = new ToolsStoreDB(); 
+
         // GET: Checkout
         public ActionResult AddressPayment()
         {
@@ -21,6 +22,8 @@ namespace ToolsStore.Controllers
         public ActionResult AddressAndPayment(FormCollection values)
         {
             var order = new Order();
+            TryUpdateModel(order);
+
             try
             {
                 order.UserName = User.Identity.Name;
