@@ -12,9 +12,17 @@ using ToolsStore.Models;
 
 namespace ToolsStore.Controllers
 {
+
     [Authorize]
     public class AccountController : Controller
     {
+        private void MigrateShoppingCart(string Email)
+        {
+            // Associate shopping cart items with logged-in user
+            var cart = ShoppingCart.GetCart(this.HttpContext);
+            cart.MigrateCart(Email);
+            Session[ShoppingCart.CartSessionKey] = Email;
+        }
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
 
@@ -70,7 +78,9 @@ namespace ToolsStore.Controllers
         {
             if (!ModelState.IsValid)
             {
+                MigrateShoppingCart(model.Email);
                 return View(model);
+
             }
 
             // This doesn't count login failures towards account lockout
@@ -155,6 +165,7 @@ namespace ToolsStore.Controllers
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
+                    MigrateShoppingCart(model.Email);
                     await SignInManager.SignInAsync(user, isPersistent:false, rememberBrowser:false);
                     
                     // For more information on how to enable account confirmation and password reset please visit https://go.microsoft.com/fwlink/?LinkID=320771
