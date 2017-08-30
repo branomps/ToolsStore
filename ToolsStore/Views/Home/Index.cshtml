@@ -1,4 +1,5 @@
-﻿@{
+﻿@model IEnumerable<ToolsStore.Models.Product>
+@{
     ViewBag.Title = "Home Page";
 }
 
@@ -6,6 +7,21 @@
     <h1>The Best Tools Store Ever.</h1>
     
 </div>
+<h3><em>Top</em>seling tools.</h3>
+
+<ul id="product-list">
+    @foreach (var product in Model)
+    {
+        <li>
+            <a href="@Url.Action("Details", "Store", new { id = product.ProductId })">
+
+                <img alt="@product.Title" src="@product.ProductImgUrl" />
+                <span>@product.Title</span>
+                <span>@product.Price</span>
+            </a>
+        </li>
+    }
+</ul>
 
 <div class="row">
     <div class="col-md-4">
