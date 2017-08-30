@@ -19,9 +19,8 @@ namespace ToolsStore.Controllers
 
         public ActionResult Browse(string category)
         {
-            // Retrieve Genre and its Associated Albums from database
-            var categoryModel = storeDB.Categories.Include("Products")
-                .Single(c => c.Name == category);
+            // Retrieve Category and its Associated Products from database
+            var categoryModel = storeDB.Categories.Include("Products").Single(c => c.Name == category);
 
             return View(categoryModel);
         }
@@ -35,10 +34,10 @@ namespace ToolsStore.Controllers
         }
 
         //
-        // GET: /Store/GenreMenu
+        // GET: /Store/CategoryMenu
 
         [ChildActionOnly]
-        public ActionResult GenreMenu()
+        public ActionResult CategoryMenu()
         {
             var category = storeDB.Categories.ToList();
 

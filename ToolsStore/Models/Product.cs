@@ -26,7 +26,7 @@ namespace ToolsStore.Models
         public virtual Brand Brand { get; set; }
         [DisplayName("Category")]
         public virtual Category Category { get; set; }
-
+        public virtual IList<OrderDetail> OrderDetails { get; set; }
 
 
     }
