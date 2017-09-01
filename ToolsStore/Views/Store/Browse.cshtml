@@ -17,6 +17,7 @@
                     <img class="product-img img-responsive" src="@product.ProductImgUrl" alt="@product.Title" />
 
                 </a>
+                <p class="product-price">Price : @product.Price</p>
                 <a class="btn btn-primary btn-details" role="button" href="@Url.Action("Details", "Store", new { id = product.ProductId })" >
                     Details
                 </a>
