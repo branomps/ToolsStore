@@ -136,4 +136,7 @@ p.product-price {
     border: 1px solid #b4b4b4;
     box-shadow:1px 1px 1px #555;
 }
+.details-block h2{
+    margin-left: 10px;
+}
 /* Store-Details-ProductId End --------------------------------------------------------------------*/
