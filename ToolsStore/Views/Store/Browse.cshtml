@@ -5,19 +5,25 @@
 }
 
 <div>
-    <h2><em>@Model.Name</em> Category</h2>
-    <ul class="product-ul">
-        @foreach ( var product in Model.Products)
+    <h2 class="browse-h2"><em>@Model.Name</em> Category</h2>
+    <div class="row product-table">
+        @foreach (var product in Model.Products)
         {
-            <li class="product-li">
+
+            <div class="col-md-4 product-block">
+                <div class="product-block-inside">
                 <a class="product-a" href="@Url.Action("Details", new { id = product.ProductId})">
-                    <img  class="product-img "src="@product.ProductImgUrl" alt="@product.Title" />
-                    <span class="product-title">@product.Title</span>
+                    <h2 class="product-title">@product.Title</h2>
+                    <img class="product-img img-responsive" src="@product.ProductImgUrl" alt="@product.Title" />
+
                 </a>
-                <a href="@Url.Action("Details", "Store", new { id = product.ProductId })" class="btn btn-primary" role="button">
+                <a class="btn btn-primary btn-details" role="button" href="@Url.Action("Details", "Store", new { id = product.ProductId })" >
                     Details
                 </a>
-            </li>
+                 @Html.ActionLink("Buy Product", "AddToCart","ShoppingCart", new { id = product.ProductId },new { @class= "btn btn-success btn-details" })
+            </div>
+            </div>
+
         }
-    </ul>
+    </div>
 </div>
