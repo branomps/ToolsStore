@@ -27,9 +27,12 @@
                 <em>Description : </em>
                 @Model.Description
             </p>
-            <p class="button">
-                @Html.ActionLink("Add to cart", "AddToCart", "ShoppingCart", new { id = Model.ProductId }, "")
+            <p>
+            @Html.ActionLink("Buy Product", "AddToCart", "ShoppingCart", new { id = Model.ProductId }, new { @class = "btn btn-success btn-details" })
             </p>
+            @*<p class="btn btn-success">
+                @Html.ActionLink("Add to cart", "AddToCart", "ShoppingCart", new { id = Model.ProductId }, "")
+            </p>*@
         </div>
     </div>
 </div>
