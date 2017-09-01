@@ -141,7 +141,6 @@ p.product-price {
     margin-left: 10px;
 }
 .details-img{
-    display:inline-block;
     float:left;
     max-width: 45%;
     margin:15px;
