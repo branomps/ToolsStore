@@ -168,3 +168,26 @@ p.product-description em{
         margin-left:15px;
 }
 /* Store-Details-ProductId End --------------------------------------------------------------------*/
+/* ShoppingCart-Index Start --------------------------------------------------------------------*/
+.cart-surmmary{
+    background-color:white;
+    min-height:400px;
+}
+.cart-surmmary-img {
+    width: 100%;
+    margin:5px;
+}
+td.change-size-cell{
+    width: 120px;
+    height:120px;
+}
+.table > tbody > tr > td {
+    height: 120px;
+    vertical-align:middle;
+}
+.cart-total{
+    background-color:white;
+    font-size: 2.5rem;
+    font-weight:600;
+}
+/* ShoppingCart-Index End --------------------------------------------------------------------*/
