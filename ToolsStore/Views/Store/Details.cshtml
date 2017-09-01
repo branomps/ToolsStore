@@ -9,19 +9,17 @@
         <div class="details-block">
             <h2>@Model.Title</h2>
                 <img class="details-img" alt="@Model.Title" src="@Model.ProductImgUrl" />
-            
-
             <div id="details-product">
                 <p>
-                    <em>Category:</em>
+                    <em>Category : </em>
                     @Model.Category.Name
                 </p>
                 <p>
-                    <em>Brand:</em>
+                    <em>Brand : </em>
                     @Model.Brand.Name
                 </p>
                 <p>
-                    <em>Price:</em>
+                    <em>Price : </em>
                     @String.Format("{0:F}", Model.Price)
                 </p>
                 <p class="button">
