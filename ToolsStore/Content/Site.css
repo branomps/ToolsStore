@@ -130,5 +130,10 @@ p.product-price {
 /* Store-Browse-Tiles End --------------------------------------------------------------------*/
 
 /* Store-Details-ProductId Start --------------------------------------------------------------------*/
-
+.details-block{
+    display:block;
+    margin-top:4px;
+    border: 1px solid #b4b4b4;
+    box-shadow:1px 1px 1px #555;
+}
 /* Store-Details-ProductId End --------------------------------------------------------------------*/
