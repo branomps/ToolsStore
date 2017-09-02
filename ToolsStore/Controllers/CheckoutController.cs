@@ -13,11 +13,11 @@ namespace ToolsStore.Controllers
         ToolsStoreDB storeDB = new ToolsStoreDB(); 
 
         // GET: Checkout
-        public ActionResult AddressPayment()
+        public ActionResult AddressAndPayment()
         {
             return View();
         }
-
+        [HttpPost]
         //Post : checkout
         public ActionResult AddressAndPayment(FormCollection values)
         {
