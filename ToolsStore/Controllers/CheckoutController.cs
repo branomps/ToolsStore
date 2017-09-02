@@ -15,6 +15,7 @@ namespace ToolsStore.Controllers
         // GET: Checkout
         public ActionResult AddressAndPayment()
         {
+            ViewBag.User = User.Identity.Name;
             return View();
         }
         [HttpPost]
@@ -23,7 +24,7 @@ namespace ToolsStore.Controllers
         {
             var order = new Order();
             TryUpdateModel(order);
-
+            ViewBag.User = User.Identity.Name;
             try
             {
                 order.UserName = User.Identity.Name;
