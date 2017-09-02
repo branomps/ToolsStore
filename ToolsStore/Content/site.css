@@ -25,7 +25,15 @@
     font-size:6rem;
     font-weight:300;
 }
+
 /* Navbar Start --------------------------------------------------------------------*/
+div.navbar{
+    height:71px;
+
+}
+.navbar-inverse .navbar-nav > li > a {
+    padding-top:18px;  
+}
 div.navbarleft{
     display:inline-block;
 
@@ -33,7 +41,7 @@ div.navbarleft{
 
 .navbarleft {
     position: relative;
-    top: 4px;
+    top: 17px;
     left:auto;
     width: 195px;
     border-width: 0 0 1px;
@@ -60,6 +68,18 @@ ul.navbar-side li a:hover {
     color: white;
 }
 /* Navbar End --------------------------------------------------------------------*/
+/*Cart Glyphicon and Badge Start -------------------------------------------------- */
+span.glyphicon{
+    color:#ff6a00;
+    font-size:3rem;
+}
+
+span#badge-up.badge {
+    min-height: 20px;
+    min-width:20px;
+    vertical-align: super;
+}
+/*Cart Glyphicon and Badge End -------------------------------------------------- */
 /* Home-Index-Tiles Start --------------------------------------------------------------------*/
 .thumbnail {
     display: inline-block;
@@ -83,7 +103,6 @@ a.btn {
     padding-left:10px;
     margin-top:4px;
 }
-.t
 a.btn{
     margin-left:5px;
 }

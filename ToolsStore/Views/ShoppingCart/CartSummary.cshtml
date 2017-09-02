@@ -1,5 +1,5 @@
-﻿@Html.ActionLink("Cart (" + ViewData["CartCount"] + ")",
+﻿@*@Html.ActionLink("Cart (" + ViewData["CartCount"] + ")",
     "Index",
     "ShoppingCart",
-    new { id = "cart-status" })
-
+    new { id = "cart-status" })*@
+<a class="btn" href="@Url.Action("Index", "ShoppingCart", new { id ="cart-status"}, null)"><span class="glyphicon glyphicon-shopping-cart"><span  id="badge-up" class="badge">@ViewData["CartCount"]</span></span></a>
