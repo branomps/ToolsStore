@@ -2,4 +2,4 @@
     "Index",
     "ShoppingCart",
     new { id = "cart-status" })*@
-<a class="btn" href="@Url.Action("Index", "ShoppingCart", new { id ="cart-status"})"><span class="glyphicon glyphicon-shopping-cart"><span  id="cart-status" class="badge badge-up">@ViewData["CartCount"]</span></span></a>
+<a class="btn" href="@Url.Action("Index", "ShoppingCart", new { id ="cart-status"})"><span class="glyphicon glyphicon-shopping-cart glyphicon-navbar-cart"><span  id="cart-status" class="badge badge-up">@ViewData["CartCount"]</span></span></a>
