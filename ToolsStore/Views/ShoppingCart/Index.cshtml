@@ -27,10 +27,10 @@
 
                         /*$('#cart-total').text(data.CartTotal);*/
                         $('#cart-total').text(function () {
-                            return "£" + data.CartTotal ;
+                            return "£" + data.CartTotal;
                         });
                         $('#update-message').text(data.Message);
-                        $('#cart-status').text('Cart (' + data.CartCount + ')');
+                        $('#cart-status').text(data.CartCount);
                     });
             }
         });
@@ -55,7 +55,7 @@
             return "£" +data.CartTotal ;
         });
         $('#update-message').text(data.Message);
-        $('#cart-status').text('Cart (' + data.CartCount + ')');
+        $('#cart-status').text(data.CartCount);
     }
 </script>
 <div class="row cart-surmmary">

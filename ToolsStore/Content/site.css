@@ -74,7 +74,7 @@ span.glyphicon{
     font-size:3rem;
 }
 
-span#badge-up.badge {
+span#cart-status.badge.badge-up {
     min-height: 20px;
     min-width:20px;
     vertical-align: super;
