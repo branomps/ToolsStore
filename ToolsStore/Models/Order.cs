@@ -11,7 +11,6 @@ namespace ToolsStore.Models
     {
         [Key]
         public virtual int OrderId { get; set; }
-        [ScaffoldColumn(false)]
         public virtual string UserName { get; set; }
         [Required(ErrorMessage = "First Name is required")]
         [DisplayName("First Name")]
