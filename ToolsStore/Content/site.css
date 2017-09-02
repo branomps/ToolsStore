@@ -191,3 +191,22 @@ td.change-size-cell{
     font-weight:600;
 }
 /* ShoppingCart-Index End --------------------------------------------------------------------*/
+/*  Checkout-AddressAndPayment Start --------------------------------------------------------------------*/
+div.addresspayment-container {
+    height: 680px;
+    border: 1.5px solid #ECECEC;
+}
+
+h2.addresspayment-h2 {
+    font-weight: 100;
+    margin-left: 15px;
+    margin-bottom:30px;
+}
+
+h4.addresspayment-h4 {
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+
+/*  Checkout-AddressAndPayment End --------------------------------------------------------------------*/

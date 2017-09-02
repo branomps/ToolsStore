@@ -20,7 +20,7 @@
                 </a>
                 <div class="caption">
                     <h3>@product.Title</h3>
-                    <p>@product.Price</p>
+                    <p>@Html.DisplayFor(modelItem => product.Price)</p>
                     <a href="@Url.Action("Details", "Store", new { id = product.ProductId })" class="btn btn-primary" role="button">
                         Details
                     </a>
