@@ -25,7 +25,10 @@
                             $('#item-count-' + data.DeleteId).text(data.ItemCount);
                         }
 
-                        $('#cart-total').text(data.CartTotal);
+                        /*$('#cart-total').text(data.CartTotal);*/
+                        $('#cart-total').text(function () {
+                            return "£" + data.CartTotal ;
+                        });
                         $('#update-message').text(data.Message);
                         $('#cart-status').text('Cart (' + data.CartCount + ')');
                     });
@@ -47,7 +50,10 @@
             $('#item-count-' + data.DeleteId).text(data.ItemCount);
         }
 
-        $('#cart-total').text(data.CartTotal);
+        /*$('#cart-total').text(data.CartTotal);*/
+        $('#cart-total').text(function () {
+            return "£" +data.CartTotal ;
+        });
         $('#update-message').text(data.Message);
         $('#cart-status').text('Cart (' + data.CartCount + ')');
     }
@@ -94,7 +100,7 @@
                             @Html.ActionLink(item.Product.Title, "Details", "Store", new { id = item.ProductId }, null)
                         </td>
                         <td>
-                            @item.Product.Price
+                            @Html.DisplayFor(modelItem =>item.Product.Price)
                         </td>
                         <td id="item-count-@item.RecordId">
                             @item.Count
@@ -110,7 +116,7 @@
                     <td></td>
                     <td class="cart-total">Total : </td>
                     <td id="cart-total" class="cart-total">
-                         @Model.CartTotal
+                      @Html.DisplayFor(modelCartTotal => Model.CartTotal)
                     </td>
                 </tr>
             </table>

@@ -16,6 +16,7 @@ namespace ToolsStore.Models
         [StringLength(100)]
         public virtual string Title { get; set; }
         [DisplayName("Price")]
+        [DataType(DataType.Currency)]
         [Required]
         public virtual decimal Price { get; set; }
         [DisplayName("Image Path")]
