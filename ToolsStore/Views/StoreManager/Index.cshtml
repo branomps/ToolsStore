@@ -4,9 +4,9 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2 class="manager-h2">Index</h2>
 
-<p>
+<p class="manager-create-btn">
     @Html.ActionLink("Create New", "Create","StoreManager", new { @class = "btn btn-success" })
 </p>
 <table class="table">
@@ -27,9 +27,6 @@
            @Html.DisplayNameFor(model => model.Price) 
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Description)
-        </th>
-        <th>
             Edit
         </th>
         <th>
@@ -44,7 +41,7 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            <img src="@Html.DisplayFor(modelItem => item.ProductImgUrl)" height="90" width="90" alt="item.title" />
+           <img src="@Html.DisplayFor(modelItem => item.ProductImgUrl)" height="90" width="90" alt="item.title" />
         </td>
         <td>
            @Html.DisplayFor(modelItem => item.Brand.Name) 
@@ -57,9 +54,6 @@
         </td>
         <td>
           @Html.DisplayFor(modelItem => item.Price)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Description)
         </td>
         <td>
             <a class="btn btn-primary" href="@Url.Action("Edit","StoreManager", new { id = item.ProductId})"><span class="glyphicon glyphicon-pencil"></span></a>

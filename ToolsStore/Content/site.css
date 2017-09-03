@@ -26,6 +26,8 @@
     font-weight:300;
 }
 
+
+
 /* Navbar Start --------------------------------------------------------------------*/
 div.navbar{
     height:71px;
@@ -80,6 +82,15 @@ span#cart-status.badge.badge-up {
     vertical-align: super;
 }
 /*Cart Glyphicon and Badge End -------------------------------------------------- */
+/*StoreManager Start -------------------------------------------------------------*/
+h2.manager-h2, h3.manager-h3 {
+    margin-top: 30px;
+    margin-left: 15px;
+}
+p.manager-create-btn{
+    float:right;
+}
+/*StoreManager End ---------------------------------------------------------------*/
 /* Home-Index-Tiles Start --------------------------------------------------------------------*/
 .thumbnail {
     display: inline-block;
