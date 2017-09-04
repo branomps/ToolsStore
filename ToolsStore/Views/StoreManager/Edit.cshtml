@@ -4,7 +4,7 @@
     ViewBag.Title = "Edit";
 }
 
-<h2>Edit</h2>
+<h2 class="manager-h2">Edit</h2>
 
 
 @using (Html.BeginForm())
@@ -12,7 +12,7 @@
     @Html.AntiForgeryToken()
     
     <div class="form-horizontal">
-        <h4>Product</h4>
+        <h3 class="manager-h3">Product</h3>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         @Html.HiddenFor(model => model.ProductId)
@@ -59,22 +59,24 @@
         <div class="form-group">
             @Html.LabelFor(model => model.Description, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Description, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.TextAreaFor(model => model.Description, new { @class = "form-control", @rows=6 } )
                 @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
             </div>
         </div>
-
-        <div class="form-group">
-            <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Save" class="btn btn-default" />
+               
+    <div class="form-group">
+        <div class="col-md-6">
+            <h3 class="manager-h3">Do you want to save this product?</h3>
+        </div>
+        <div class="col-md-6">
+            <div class="form-actions no-color">
+                <input type="submit" value="Save" class="btn btn-warning" />
+                @Html.ActionLink("Back to List", "Index", "StoreManager", new { @class = "btn btn-default" })
             </div>
         </div>
     </div>
+    </div>
 }
-
-<div>
-    @Html.ActionLink("Back to List", "Index")
-</div>
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
