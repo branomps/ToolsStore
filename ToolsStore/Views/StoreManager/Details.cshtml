@@ -3,63 +3,47 @@
 @{
     ViewBag.Title = "Details";
 }
+<div class="row">
 
-<h2>Details</h2>
+    <div class="col-lg-12">
+        <h2 class="manager-h2">
+            Details Product :
+            <small>@Html.DisplayFor(model => model.Title)</small>
+        </h2>
+    </div>
 
-<div>
-    <h4>Product</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Brand.Name)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Brand.Name)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Category.Name)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Category.Name)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Title)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Title)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Price)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Price)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.ProductImgUrl)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.ProductImgUrl)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Description)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Description)
-        </dd>
-
-    </dl>
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ProductId }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+
+<div class="row">
+
+    <div class="col-md-6">
+        <img class="img-responsive" src=" @Html.DisplayFor(model => model.ProductImgUrl)" alt="@Html.DisplayFor(model => model.Title)" />
+    </div>
+
+    <div class="col-md-6">
+        <h3>Product @Html.DisplayNameFor(model => model.Description)</h3>
+        <p>@Html.DisplayFor(model => model.Description)</p>
+        <h3>Product Details</h3>
+        <ul>
+            <li><span class="span-bold">@Html.DisplayNameFor(model => model.Brand.Name) :   </span> @Html.DisplayFor(model => model.Brand.Name)</li>
+            <li><span class="span-bold">@Html.DisplayNameFor(model => model.Category.Name) :</span> @Html.DisplayFor(model => model.Category.Name)</li>
+            <li><span class="span-bold">@Html.DisplayNameFor(model => model.Title) :        </span> @Html.DisplayFor(model => model.Title)</li>
+            <li><span class="span-bold">@Html.DisplayNameFor(model => model.Price) :        </span> @Html.DisplayFor(model => model.Price)</li>
+            <li><span class="span-bold">@Html.DisplayNameFor(model => model.ProductImgUrl) :</span> @Html.DisplayFor(model => model.ProductImgUrl)</li>
+        </ul>
+    </div>
+
+</div>
+
+
+    <div class="form-group">
+        <div class="col-md-6">
+            <h3 class="manager-h3">Do you want to edit this product?</h3>
+        </div>
+        <div class="col-md-6">
+            <div class="form-actions no-color">
+                @Html.ActionLink("Edit", "Edit", "StoreManager", new { id = Model.ProductId }, new { @class = "btn btn-warning" })
+                @Html.ActionLink("Back to List", "Index", "StoreManager", new { @class = "btn btn-default" })
+            </div>
+        </div>
+    </div>

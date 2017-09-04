@@ -82,7 +82,7 @@ span#cart-status.badge.badge-up {
     vertical-align: super;
 }
 /*Cart Glyphicon and Badge End -------------------------------------------------- */
-/*StoreManager Start -------------------------------------------------------------*/
+/*StoreManager-Create Start -------------------------------------------------------------*/
 h2.manager-h2, h3.manager-h3 {
     margin-top: 30px;
     margin-left: 15px;
@@ -90,7 +90,17 @@ h2.manager-h2, h3.manager-h3 {
 p.manager-create-btn{
     float:right;
 }
-/*StoreManager End ---------------------------------------------------------------*/
+/*StoreManager-Create End ---------------------------------------------------------------*/
+/*StoreManager-Delete Strart -------------------------------------------------------------*/
+span.span-bold{
+    font-size:1.8rem;
+    font-weight:600;
+}
+div h3.manager-h3 {
+    margin-top: 0;
+    margin-left: 15px;
+}
+/*StoreManager-Delete End -------------------------------------------------------------*/
 /* Home-Index-Tiles Start --------------------------------------------------------------------*/
 .thumbnail {
     display: inline-block;
