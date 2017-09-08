@@ -13,6 +13,10 @@
                 @Html.AntiForgeryToken()
                 <h3 class="manager-h3">Use a local account to log in.</h3>
                 <hr />
+                <div class="col-md-12">
+                    <p> For access to admin section use this account : admin@toolsStore.com</p>
+                    <p> The password is : Branislav2012*</p>
+                </div>
                 @Html.ValidationSummary(true, "", new { @class = "text-danger" })
                 <div class="form-group">
                     @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label" })
@@ -20,6 +24,7 @@
                         @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
                         @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
                     </div>
+                    
                 </div>
                 <div class="form-group">
                     @Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label" })
