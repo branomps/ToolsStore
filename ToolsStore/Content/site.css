@@ -264,3 +264,14 @@ h4.addresspayment-h4 {
     margin-left: 15px;
 }
 /*  Checkout-AddressAndPayment End --------------------------------------------------------------------*/
+/*  Checkout-Complete Start --------------------------------------------------------------------*/
+h2.complete-h2{
+    margin-top:35px;
+    margin-left:15px;
+ 
+}
+p.complete-p {
+    
+    margin-left: 15px;
+}
+/*  Checkout-Complete End --------------------------------------------------------------------*/
